@@ -1,0 +1,12 @@
+body{
+    background-color: brown;
+}
+
+nav{
+    text-align: right;
+}
+
+li{
+    list-style: none;
+    display: inline;
+}
