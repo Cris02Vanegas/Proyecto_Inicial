@@ -1,6 +1,6 @@
-body{
+/* body{
     background-color: brown;
-}
+} */
 
 nav{
     text-align: right;
@@ -9,4 +9,19 @@ nav{
 li{
     list-style: none;
     display: inline;
+}
+
+.encabezado{
+    font-family: "Truculenta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 16px;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+  }
+
+
+.icono {
+  font-variation-settings: 'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
 }
