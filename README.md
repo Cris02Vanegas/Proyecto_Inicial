@@ -14,3 +14,5 @@ tareas pendientes para el proyecto
 ### Mostrar por lo menos un icono
 
 #### Ingresar los 3 iconos de JS HTML CSS
+
+##### Agregar el responsivo al proyecto

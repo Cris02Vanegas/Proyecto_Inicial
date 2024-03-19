@@ -1,27 +1,86 @@
-/* body{
-    background-color: brown;
-} */
-
-nav{
-    text-align: right;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-li{
-    list-style: none;
-    display: inline;
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+body{
+  background:#ccdbb1;
+}
+
+#container-header{
+  border: 2px solid black;
+}
+
+header{
+  line-height: 30px;
+  width: 100%;
+ /*  position: fixed;
+  z-index: 100; */
+}
+
+#github{
+  width: 1.4%;
+  margin-right: 5px;
+  height: 10%;
+}
+
+#spotify{
+  width: 1.1%;
+  margin-right: 5px}
+
+nav{
+  background-color: #588157;
+  text-align: right;
+}
+
+.navegacion{
+  list-style: none;
+  display: inline;
+  margin: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+/* main{
+  margin: 0 5px;
 }
 
 .encabezado{
-    font-family: "Truculenta", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 16px;
-    font-style: normal;
-    font-variation-settings:"wdth" 100;
-  }
-
-
-.icono {
-  font-variation-settings: 'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
+  font-family: "Marmelad", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 10px;
 }
+
+.dato {
+  margin-left: 10px;
+  list-style: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+} 
+
+b{
+  text-decoration: underline;
+}
+
+#Sobre{
+  margin: 10px;
+}
+
+P{
+  margin: 10px;
+  text-align: justify;
+}
+
+.lugares{
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+ */
