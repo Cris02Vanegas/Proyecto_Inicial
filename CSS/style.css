@@ -497,6 +497,10 @@ footer{
     margin-right: 10px;
   }
   
+  .encabezado{
+    font-size: 17px;
+  } 
+
   .equipos{
     width: 100%;
   }
