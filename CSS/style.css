@@ -483,9 +483,11 @@ footer{
 
 /* DISPOSITIVOS MOVILES */
 
-@media screen and (max-width: 768px){
+@media (min-width: 375px) and (max-width: 768px){
+
  header{
     position: fixed;
+    width: 100%;
   }
   
   .main{
