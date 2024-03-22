@@ -7,7 +7,6 @@
   box-sizing: border-box;
 }
 body{
-  /* width: 100%; */
   background:#ccdbb1;
 }
 
@@ -16,7 +15,7 @@ main,aside{
   display: flex;
 }
 
-/* header, */footer{
+footer{
   width: 100%;
 }
 
@@ -28,14 +27,6 @@ header{
   left: 0;
   right: 0;
 }
-
-/* .container-header{
-  background-color: #588157;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-} */
 
 .nav{
   display: flex;
@@ -116,6 +107,7 @@ header{
   }
 }
 /* CONTENIDO PRINCIPAL ASIDE Y MAIN*/
+
 .main{
   width: 100%;
   display: flex;
@@ -440,9 +432,46 @@ main{
 
 footer{
   background-color: #588157;
-  height: 30px;
-  text-align: center;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
+
+.redes{
+  display: flex;
+  height: 40px;
+  margin-top: 5px;
+}
+
+.face,.insta,.twitter{
+  width: 40px;
+  height: 35px;
+  margin: 5px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.facebook,.instagram,.twi{
+  width: 20px;
+  height: 20px;
+}
+
+.autor{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+}
+
+.name-footer{
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+
+/**************RESPONSIVE****************/
 
 /* DISPOSITIVOS MOVILES */
 
@@ -532,6 +561,7 @@ footer{
     margin-top: 10px;
   }
 }
+
 
 /* DISPOSITIVOS PC */
 
