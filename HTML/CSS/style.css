@@ -7,60 +7,169 @@
   box-sizing: border-box;
 }
 body{
+  width: 100%;
+  height: 100%;
   background:#ccdbb1;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#container-header{
-  border: 2px solid black;
+main,aside,footer{
+  color: black;
+  display: flex;
 }
 
 header{
-  line-height: 30px;
+  color: black;
+  border: 2px solid white;
+  display: flex;
+}
+
+header,footer{
   width: 100%;
- /*  position: fixed;
-  z-index: 100; */
 }
 
-#github{
-  width: 1.4%;
-  margin-right: 5px;
-  height: 10%;
+header{
+  height: 40px;
 }
 
-#spotify{
-  width: 1.1%;
-  margin-right: 5px}
-
-nav{
+#container-header{
   background-color: #588157;
-  text-align: right;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.enlaces{
+  margin-right: 20px;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.nav-link{
+  color: antiquewhite;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .navegacion{
-  list-style: none;
+  font-size: 16px;
+  margin:0 5px ;
+  text-transform: uppercase;
   display: inline;
-  margin: 10px;
+
 }
 
-a{
-  text-decoration: none;
-  color: white;
+#github{
+  width: 15%;
+  height: 15%;
 }
-/* main{
-  margin: 0 5px;
+
+#spotify{
+  width: 17%;
+  height: 17%;
+}
+.estilo1{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.estilo1 #github{
+  align-items: center;
+}
+
+.estilo2{
+  width: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.nav-link:hover{
+  background-color: #d4a373;
+  transition: 0.3s;
+}
+
+.logo{
+  padding: 3px;
+  height: 40px;
+}
+
+.logo{
+  animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotate(0);
+  }
+  50%{
+    transform: rotate(360deg);
+  }
+}
+/* CONTENIDO PRINCIPAL ASIDE Y MAIN*/
+.main{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:space-between;
+}
+
+/*aside*/
+
+aside{
+  width: 30%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color:  #fefae0;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  box-shadow: 4px 3px 9px 0px #000000;
+}
+
+.informacion{
+  display: flex;
+  width: 100%;
+}
+
+#foto{
+  margin-left: 10px;;
+  margin-top: 10px;
+  width: 150px;
+  height: 250px;
+  border-radius: 30px;
+  justify-content: flex-start;
 }
 
 .encabezado{
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 10px;
   font-family: "Marmelad", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 50px;
+  font-weight: 800;
+  font-size: 18px;
   text-transform: uppercase;
-  margin: 10px;
+  color: #0d1b2a;
+}
+
+.datos{
+  margin: 60px 0 0 10px;;
 }
 
 .dato {
-  margin-left: 10px;
   list-style: none;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 20px;
@@ -70,17 +179,216 @@ b{
   text-decoration: underline;
 }
 
+.family{
+  width: 100%;
+  height: 35%;
+  display: flex;
+  padding: 10px;
+}
+
+.family h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #0d1b2a;
+}
+
+.tabla1{
+  width: 100%;
+  height: 50%;
+  margin-top: 10px;
+  border-collapse: collapse ;
+  justify-content: end;
+}
+
+.tabla1 th, td{
+  width: 25px;
+  text-align: center;
+  border: 1px solid brown;
+}
+
+.container-family{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 5px ;
+}
+
+.title1{
+  position: relative;
+}
+
+.familia{
+  width: 40%;
+  object-fit: contain;
+  border-radius: 50px;
+}
+
+.familia:hover{
+  animation: escalar 3s;
+}
+@keyframes escalar {
+  0%{
+      transform: scale(1);
+  }
+  100%{
+      transform: scale(1.8);
+  }
+}
+
+.estudios{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 10px 10px 10px 10px;
+}
+
+.estudios h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #0d1b2a;
+}
+
+.tabla2{
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse ;
+}
+
+.tabla2 th, td{
+  width: 25px;
+  text-align: center;
+  border: 1px solid brown;
+  
+}
+
+/*Main*/
+.main{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+main{
+  width: 70%;
+  border-radius: 20px;
+  background-color: #fefae0;
+  font-family: "Darker Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+
+.container-main{
+  width: 68%;
+  margin-top: 10px;
+  margin-right: 10px;
+  box-shadow: -4px 3px 5px 0 #000000;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.contenido{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #Sobre{
-  margin: 10px;
+  padding: 20px;
 }
 
-P{
-  margin: 10px;
+.contenido p{
+  padding: 0 20px 20px 20px;
   text-align: justify;
+  font-size: 25px;
 }
 
-.lugares{
-  margin-left: 50px;
-  margin-bottom: 10px;
+.location{
+  padding: 0 20px 20px 40px;
+  font-size: 20px;
+  width: 100%;
 }
- */
+
+.activity{
+  padding-left: 25px;
+}
+
+.suesca,.palomino,.tota,.villa{
+  display: flex;
+  border-bottom: 1px solid brown;
+}
+
+.palomino,.tota,.villa{
+  margin-top: 10px;
+}
+
+.lugares1{
+  margin-right: 40px;  
+}
+
+.map-suesca{
+  width: 50%;
+  height: 50%;
+}
+
+.map-suesca iframe{
+  width: 100%;
+}
+
+.lugares2{
+  margin-right: 40px;  
+}
+
+.map-palomino{
+  width: 50%;
+  height: 50%;
+}
+
+map-palomino iframe{
+  width: 100%;
+}
+
+.lugares3{
+  margin-right: 40px;  
+}
+
+.map-tota{
+  width: 50%;
+  height: 50%;
+}
+
+.lugares4{
+  margin-right: 40px;  
+}
+
+.map-villa{
+  border: 2px solid black;
+  width: 50%;
+  height: 50%;
+}
+
+.proyectos{
+  height: 15%;
+}
+.proyectos,.bootcamp{
+  padding: 0 20px 20px 20px;
+  font-size: 22px;
+}
+
+.proyectos strong{
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.proyectos img{
+  width: 20px;
+  height: 20px;
+}
+
+.programacion{
+  height: 35%;
+}
+.programacion img{
+  width: 40px;
+  height: 40px;
+}
+/* FOOTER*/
+
+footer{
+  background-color: gray;
+}

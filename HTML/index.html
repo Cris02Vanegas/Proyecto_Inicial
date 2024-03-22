@@ -6,80 +6,180 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dongle&family=Lugrasimo&family=Marmelad&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
     <title>Autobiografia Ing. Cristhian Vanegas</title>
 </head>
 <body>
-    <div id="contenedor">
-        <header>
-            <div id="container-header">
-                <nav>
-                    <ul class="enlaces">
-                        <li class="navegacion"><img id="github" src="./images/github_git_icon_145985.png" alt="github"><a href="https://github.com/" target="_blank">Mi GitHub</a></li>
-                        <li class="navegacion"><img id="spotify" src="./images/spotify.ico" alt="spotify"><a href="https://open.spotify.com/playlist/37i9dQZF1DWWwzidNQX6jx" target="_blank">Playlist</a></li>
-                    </ul>
-                </nav>
-            </div>
-            
-        </header>
- <!-- 
-    <main>
-        <div class="container">
-            <figure>
-                <img id="foto" src="./images/SIG.ico" alt="foto">
-            </figure>
-            <h1 class="encabezado">Cristhian Francisco Vanegas Bucuru</h1>
-            <ul class="datos">
-                <li class="dato">Edad: <b>30 Años</b></li>
-                <li class="dato">Ciudad: <b>Bogota</b></li>
-                <li class="dato">Profesion: <b>Ingeniero Electrónico</b></li>
-            </ul>
+    <header>
+        <div id="container-header">
+            <nav class="nav">
+                <img src="./images/bienvenido.png" alt="welcome" class="logo">
+                <ul class="enlaces">
+                    <li class="navegacion">
+                        <div class="estilo1">
+                            <img id="github" src="./images/git.png" alt="github"><a href="https://github.com/" target="_blank" class="nav-link">GitHub</a>
+                        </div></li>
+                    <li class="navegacion">
+                        <div class="estilo2">
+                            <img id="spotify" src="./images/spotify.ico" alt="spotify"><a href="https://open.spotify.com/playlist/37i9dQZF1DWWwzidNQX6jx" target="_blank" class="nav-link">Playlist</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </div>
-
-            <h2 id="Sobre">Sobre mí</h2>
-
-            <p>Mi nombre es Cristhian Francisco Vanegas Bucuru, soy ingeniero electrónico graduado de la <strong><u>Universidad ECCI</u></strong>, actualmente trabajo en el area de analisis de la informacion de la empresa <strong>OCA GLOBAL</strong> en la cual somos contratistas de la compañia <u>ENEL COLOMBIA</u>. En mis tiempos libres me gusta practicar futbol, leer y conocer lugares donde pueda guardar buenos recuerdos, a continuación les comparto lugares que recomiendo para visitar y hacer actividades:
+    </header>
+<!--CONTENIDO PRINCIPAL-->
+    <div class="main">
+    <main class="container-main">
+        <h1 id="Sobre">Sobre mí</h1>
+        <div class="contenido">
+            <p>Mi nombre es Cristhian Francisco Vanegas Bucuru, soy ingeniero electrónico graduado de la <strong><u>Universidad ECCI</u></strong>, actualmente trabajo en el area de análisis de la información de la empresa <strong>OCA GLOBAL</strong> en la cual somos contratistas de la compañía <u>ENEL COLOMBIA</u>. En mis tiempos libres me gusta practicar fútbol, leer y conocer lugares donde se pueda guardar buenos recuerdos, a continuación comparto lugares que recomiendo para visitar y hacer actividades:
             </p>
-
             <ul class="location">
-                <li class="lugares"><strong>Suesca - Cundinamarca</strong>
-                    <ol>
-                        <li>Escalada de rocas</li>
-                        <li>Caminata</li>
-                        <li>Acampar</li>
-                    </ol>
-                </li>
-                <li class="lugares"><strong>Palomino - Guajira</strong>
-                    <ol>
-                        <li>Tubing</li>
-                        <li>Surf</li>
-                        <li>Caminata y Cabalgata en la finca la Mello</li>
-                    </ol>
-                </li>
-                <li class="lugares"><strong>Lagunta De Tota - Boyaca</strong>
-                    <ol>
-                        <li>Glamping</li>
-                        <li>Cabalgata</li>
-                        <li>Pescar</li>
-                    </ol>
-                </li>
-                <li class="lugares"><strong>Villa de leyva</strong>
-                    <ol>
-                        <li>Glamping</li>
-                        <li>Visitar pozos azules</li>
-                        <li>Visitar el Parque Aventura Park</li>
-                    </ol>
-                </li>
+                <div class="suesca">
+                    <li class="lugares1"><strong>Suesca - Cundinamarca</strong>
+                        <ol class="activity">
+                            <li>Escalada de rocas</li>
+                            <li>Caminata</li>
+                            <li>Acampar</li>
+                        </ol>
+                    </li>
+                    <div class="map-suesca">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2810.091004162206!2d-73.7915276403653!3d5.092576591202951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4013230a9ea049%3A0x4e8ea4047a0dc01f!2sRocas%20de%20suesca!5e0!3m2!1ses!2sco!4v1711060129927!5m2!1ses!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div> 
+                </div>
+                <div class="palomino">
+                    <li class="lugares2"><strong>Palomino - Guajira</strong>
+                        <ol class="activity">
+                            <li>Tubing</li>
+                            <li>Surf</li>
+                            <li>Caminata y Cabalgata en la finca la Mello</li>
+                        </ol>
+                    </li>
+                    <div class="map-palomino">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1956.6114264970622!2d-73.56034441123671!3d11.245010177951961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef4b5fe1ead83b5%3A0x5050cfb182154932!2sPalomino%2C%20Dibulla%2C%20La%20Guajira!5e0!3m2!1ses!2sco!4v1711061300190!5m2!1ses!2sco" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>    
+                <div class=" tota">
+                    <li class="lugares3"><strong>Lagunta De Tota - Boyaca</strong>
+                        <ol class="activity">
+                            <li>Glamping</li>
+                            <li>Cabalgata</li>
+                            <li>Pescar</li>
+                        </ol>
+                    </li>
+                    <div class="map-tota">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53429.85246286935!2d-72.95491800011051!3d5.537694777417233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a59f21d23516f%3A0xedea6fa8bc3482ee!2sLaguna%20De%20Tota!5e0!3m2!1ses!2sco!4v1711061765283!5m2!1ses!2sco" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="villa">
+                    <li class="lugares4"><strong>Villa de leyva</strong>
+                        <ol class="activity">
+                            <li>Glamping</li>
+                            <li>Visitar pozos azules</li>
+                            <li>Visitar el Parque Aventura Park</li>
+                        </ol>
+                    </li>
+                    <div class="map-villa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9443.54818647559!2d-73.52896292680144!3d5.637197839881152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e41d70e3c78a119%3A0x63446b78661193dd!2sVilla%20de%20Leyva%2C%20Boyac%C3%A1!5e0!3m2!1ses!2sco!4v1711062106442!5m2!1ses!2sco" allowfullscreen="" loading="lazy" ></iframe>
+                    </div>
+                </div>
             </ul>
-
+            <section class="proyectos">
+                <h3>Proyectos</h3>
+                <p>Como ing. electrónico quiero seguir la rama de la programación especialmente en <strong>desarrollo web fullstack</strong>,<strong> aplicaciones móviles </strong>e <strong>inteligencia artificial</strong>. Adicional quiero conocer varios paises especialmente canada <img src="./images/canada.png" alt="canada">, inglaterra <img src="./images/inglaterra.png" alt="inglaterra">, españa <img src="./images/espana.png" alt="spain"> y alemania <img src="./images/alemania.png" alt="germany">.</p>
+                <div class="programacion">
+                    <img src="./images/html.png" alt="html">
+                    <img src="./images/CSS.png" alt="css">
+                    <img src="./images/JS.png" alt="javascript">
+                    <img src="./images/python.png" alt="">
+                    <img src="images/backend.png" alt="">
+                </div>
+            </section>
+            <section class="bootcamp">
+                <h4>Bootcamp</h4>
+                <p>Las expectativas que tengo del BOOTCAMP son muy altas, donde espero aprender mucho en el tema del Backend y el Frontend y a si poder ayudar a emprender a mis amigos.</p>
+            </section>
         </div>
-        <table>
-                realizar una tabla donde se muestre algo
-            </table>
-            <img src="" alt="" ingresar una foto como perfil>
-            <video src="">ingresar un vide de la cancion favorita</video>
-            <iframe src="" frameborder="0"> El lugar favorito con el mapa</iframe> 
+        
+         <!-- <video src="">ingresar un vide de la cancion favorita</video>
+            <iframe src="" frameborder="0"> El lugar favorito con el mapa</iframe> -->
     </main>
-    <footer></footer>-->
+<!-------------------------------ASIDE---------------------------------->    
+    <aside>
+            <div class="informacion">
+                <img id="foto" src="./images/Foto.jpeg" alt="foto">
+                <div class="name">
+                    <h1 class="encabezado">Cristhian Francisco Vanegas Bucuru</h1>
+                    <ul class="datos">
+                        <li class="dato">Edad: <b>30 Años</b></li>
+                        <li class="dato">Ciudad: <b>Bogotá</b></li>
+                        <li class="dato">Profesion: <b>Ingeniero Electrónico</b></li>
+                    </ul>
+                </div>  
+            </div>
+            <div class="family">
+                <div class="container-family">
+                    <h2 class="title1">FAMILIA</h2>
+                    <table class="tabla1">
+                        <tr>
+                            <th>Parentesco</th>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                        </tr>
+                        <tr>
+                            <td>Madre</td>
+                            <td>Maria</td>
+                            <td>57 años</td>
+                        </tr>
+                        <tr>
+                            <td>Padre</td>
+                            <td>Fernando</td>
+                            <td>70 años</td>
+                        </tr>
+                        <tr>
+                            <td>Hermano</td>
+                            <td>Carlos</td>
+                            <td>25 años</td>
+                        </tr>
+                        <tr>
+                            <td>Mascota</td>
+                            <td>Floki</td>
+                            <td>3 años</td>
+                        </tr>
+                  </table>
+                </div>    
+                <img class="familia" src="./images/familia.jpeg" alt="familia">
+            </div>
+            <div class="estudios">
+                <h2>ESTUDIOS</h2>
+            <table class="tabla2">
+                <tr>
+                  <th>Estudio</th>
+                  <th>Instituto</th>
+                  <th>Año</th>
+                </tr>
+                <tr>
+                  <td>Bachiller Técnico</td>
+                  <td>Colegio Francisco Jose De Caldas</td>
+                  <td>2010</td>
+                </tr>
+                <tr>
+                  <td>Tecnólogo Electrónico Industrial</td>
+                  <td>Universidad ECCI</td>
+                  <td>2014</td>
+                </tr>
+                <tr>
+                  <td>Ingeniero Electrónico</td>
+                  <td>Universidad ECCI</td>
+                  <td>2017</td>
+                </tr>
+              </table>  
+            </div>
+    </aside>
     </div>
+    <footer>FOOTER</footer>
 </body>
 </html>
