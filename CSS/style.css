@@ -459,6 +459,30 @@ footer{
     width: 95%;
     margin-right: 10px;
   }
+  
+  .equipos{
+    width: 100%;
+  }
+
+  .team1{
+    width: 50%;
+    height: 100%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .team2{
+    width: 50%;
+    height: 100%;
+  }
+
+  .millos{
+    object-fit:scale-down;
+  }
+  
+  .liverpool{
+    object-fit:none;
+  }
 
   .container-main{
     width: 95%;
@@ -507,7 +531,6 @@ footer{
     border: 1px solid black;
     margin-top: 10px;
   }
-  
 }
 
 /* DISPOSITIVOS PC */
